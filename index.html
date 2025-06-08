@@ -43,7 +43,7 @@
     <!-- header -->
     <header id="hero" class="container">
         <!-- section with hero image -->
-        <section class="row">
+        <section class="row justify-content-center">
             <!-- text-center class used to centre all text inside column -->
             <div class="col-12 text-center">
                 <h1 class="display-4 my-4">Mei Wong</h1>
@@ -62,6 +62,13 @@
                 <!-- mb-5 gives extra margin spacing under lead text -->
                 <p class="lead mb-5">Let's create something amazing together!</p>
             </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary col-10 col-md-4 mx-4" data-bs-toggle="modal"
+                data-bs-target="#newsletter-modal">
+                Subscribe to my newsletter!
+            </button>
+
         </section>
     </header>
 
@@ -208,6 +215,42 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="newsletter-modal" tabindex="-1" aria-labelledby="newsletter-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            Join my newsletter for the lastest updates on my projects, coding tips, and indystry
+                            insights
+                            delivered straight to your inbox.
+                            <div class="col-12">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="full-name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="full-name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Sign up!</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
