@@ -23,6 +23,15 @@ h1, h2 {
     border-radius: 0;
 }
 
+.custom-button {
+    background-color: #1f7798;
+    border-color: #1f7798;
+}
+.custom-button:hover {
+    background-color: #1d6d8a;
+    border-color: #1d6d8a;
+}
+
 /* Hero section */
 #hero {
     background-color: #dbdcde;
@@ -59,6 +68,7 @@ h1, h2 {
 #contact {
     background-color: white;
 }
+
 
 /* Media queries */
 @media screen and (min-width: 1200px) {
